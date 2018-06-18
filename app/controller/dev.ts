@@ -5,6 +5,6 @@ import { Controller } from "egg";
 export default class extends Controller {
     hello() {
         let { name } = this.ctx.query;
-        this.ctx.boody = { ok: true, data: 'hello ' + name }
+        this.ctx.body = { ok: true, data: 'hello ' + name }
     }
 }

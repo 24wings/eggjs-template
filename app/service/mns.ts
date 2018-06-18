@@ -8,9 +8,9 @@ var account = new AliMNS.Account(
   accessKeyId,
   secretAccessKey
 );
-var mq = new AliMNS.MQ("groupA", account, "hangzhou");
+// var mq = new AliMNS.MQ("groupA", account, "hangzhou");
 // send message
-mq.sendP("Hello ali-mns").then(console.log, console.error);
+// mq.sendP("Hello ali-mns").then(console.log, console.error);
 // var account = new AliMNS.Account(
 //   "<your-owner-id>",
 //   "<your-key-id>",

@@ -6,6 +6,7 @@ module.exports = (app: Application) => {
   }
 
   let devCtrl = app.controller.dev;
-  app.router.post(devApi.hello, devCtrl.hello)
+  console.log('dev')
+  return app.router.get(devApi.hello, devCtrl.hello)
 
 };
